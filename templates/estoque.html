@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+
+{% block titulo %}
+Cardápio
+{% endblock %}
+
+{% block conteudo %}
+
+{% if promocao %}
+<img src="/static/logo.png">
+{% endif %}
+<div class="row">
+  {% for p in data %}
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <img src="/static/assets/{{p.imagem}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{p.nome}}</h5>
+        {% for dado in p.info %}
+        <h3 class="card-title">Quantidade disponível: {{p.quantidade}}</h5>
+        <h3 class="card-title">Valor unitario: {{p.preco}}</h5>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

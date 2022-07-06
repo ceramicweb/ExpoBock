@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% block titulo %}
+Comentários
+{% endblock %}
+
+{% block conteudo %}
+
+<div class="row">
+  {% for c in comentarios %}
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <img src="/static/assets/{{c.imagem}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{c.nome}}</h5>
+        <h4 class="card-title">{{c.comentario}}</h5>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+[
+  {"nome": "Tijolo baiano",
+   "imagem": "baiano.jpg",   
+   "info": {
+     "quantidade": 445165,
+     "preco": 1.5400
+   }
+  },{"nome": "BC 9x19x19",
+    "imagem": "tijolo1919.jpg",   
+    "info": {
+      "quantidade": 123548,
+      "preco": 1.3200
+    }
+  },{"nome": "BC 19x14x29",
+    "imagem": "tijolo1429.jpg",   
+    "info": {
+      "quantidade": 3658,
+      "preco": 2.6200
+    }
+  },{"nome": "Telha",
+    "imagem": "telha.jpg",   
+    "info": {
+      "quantidade": 22355,
+      "preco": 0.8300
+    }
+  },{"nome": "Telha colonial",
+    "imagem": "colonial.jpg",   
+    "info": {
+      "quantidade": 569,
+      "preco": 17.3200
+    }
+  }
+]
